@@ -1,2 +1,2 @@
 # CodecademyProjects
-Codecademy Projects all in once place
+Codecademy Projects all in one place
