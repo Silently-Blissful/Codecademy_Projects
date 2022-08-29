@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Form a Story</title>
+  </head>
+  <body>
+    <section id="top">
+      <img src="https://content.codecademy.com/courses/learn-html-forms/formAStoryLogo.svg" alt="Form A Story Logo">
+    </section>
+
+    <section id="main">
+      <h1>Complete the Form -<br> Complete the Story!</h1>
+      <hr>
+      <!--Add your form below:-->
+      <!--Step 1 & 2-->
+      <form action="story.html" method="GET">
+        <!--Step 4-->
+        <label for="animal-1">Animal:</label>
+        <!--Step 5-->
+        <input id="animal-1" type="text" name="animal-1" required />
+        <!--Step 6-->
+        <br />
+        <!--Step 7-->
+        <label for="animal-2">Another Animal:</label>
+        <input id="animal-2" name="animal-2" type="text" required />
+        <br />
+        <!--Step 8-->
+        <label for="animal-3">One more Animal:</label>
+        <input id="animal-3" name="animal-3" type="text" required />
+        <br />
+        <!--Step 9-->
+        <label for="adj=1">Adjective (past tense):</label>
+        <input id="adj-1" name="adj-1" type="text" required />
+        <br />
+        <!--Step 10-->
+        <label for="verb-1">Verb (ends in -ing)</label>
+        <input id="verb-1" name="verb-1" type="text" required />
+        <br />
+        <!--Step 11-->
+        <label for="num-1">Number:</label>
+        <input id="num-1" name="num-1" type="number" required />
+        <br />
+        <!--Step 12-->
+        <span>Yes or No:</span>
+        <!--Step 13-->
+        <input id="yes" type="radio" name="answer" value="yes" required />
+        <label for="yes">Yes</label>
+        <!--Step 14-->
+        <input id="no" type="radio" name="answer" value="no" />
+        <label for="no">No</label>
+        <br />
+        <!--Step 15-->
+        <label for="speed">Relative speed (ends in er):</label>
+        <select id="speed" name="speed" required>
+          <!--Step 16-->
+          <option value="faster">Faster</option>
+          <option value="slower">Slower</option>
+        </select>
+        <br />
+        <!--Step 17-->
+        <label for="quote">Motvational Quote:</label>
+        <input id="quote" name="quote" type="text" list="quote-choices" required />
+        <!--Step 18-->
+        <datalist id="quote-choices">
+          <!--Step 19-->
+          <option value="winner gets ice cream!"></option>
+        </datalist>
+        <br />
+        <!--Step 20-->
+        <label for="message">Meaningful Message:</label>
+        <textarea id="message" name="message" rows="8" cols="40" required>Enter text here</textarea>
+        <!--Step 3-->
+        <input type="submit" value="Form My Story!" />
+      </form>
+    </section>
+  </body>
+</html>
